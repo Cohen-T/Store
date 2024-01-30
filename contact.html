@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Athletics</title>
+
+    <!--Styles Link-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header-->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane fa-beat"></i> cohenthomas0223@gmail.com</p>
+                        <p><i class="fa-solid fa-phone fa-shake"></i> (123)-456-7890</p>
+                        <div class="social-icons">
+                            <a href="https://www.youtube.com/@cohenthomasthafirst" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Cohen-T" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn btn2"> Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form onsubmit="sendEmail(); reset(); return false;" name="submit-to-google-sheet">
+                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                            <input type="text" name="Email" id="email" placeholder="Your Email" required>
+                            <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+        <!--Footer-->
+    <section class="contact-footer footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download App</h3>
+                    <p>Download App for Android and iOS Mobile Phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the best and benefits of Sports</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Great Day Designs &copy;</p>
+        </div>
+    </section>
+
+<!--js for toggle menu-->
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/b87b38c891.js" crossorigin="anonymous"></script>
+</body>
+</html>
